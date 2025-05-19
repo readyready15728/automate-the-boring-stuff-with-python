@@ -18,8 +18,9 @@ print("Enter number: ")
 
 try:
     seed = int(input())
-except ValueError:
-    print("Invalid input")
+    assert seed > 0
+except (ValueError, AssertionError):
+    print("Invalid input; must enter a positive integer")
     sys.exit(1)
 
 for x in collatz(seed):
