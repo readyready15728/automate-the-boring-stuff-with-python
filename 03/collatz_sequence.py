@@ -14,7 +14,7 @@ def collatz(x):
     # yield x  # The terminal 1 counts as part of the sequence
 
 
-print("Enter number: ", end="")
+print("Enter number: ")
 
 try:
     seed = int(input())
