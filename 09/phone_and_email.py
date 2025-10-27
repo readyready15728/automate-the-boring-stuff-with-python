@@ -1,5 +1,5 @@
-import pyperclip
 import re
+import pyperclip
 
 phone_re = re.compile(
     r"""(
